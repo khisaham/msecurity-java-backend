@@ -1,0 +1,1 @@
+cd /opt/scraper && cd target && java -jar "khisaham-1.0-SNAPSHOT.jar:lib/*" com.safaricom.Main
