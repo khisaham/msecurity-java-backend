@@ -54,7 +54,7 @@ public class SafHikariConnection {
         HikariDataSource hikariDataSourceReportsDb = hikariDataSource;
 
         //TODO its better to actually pick it from a properties files that is is either passed in the init or whichever way that makes sense
-        String mainDbConUrl = "jdbc:mysql://35.224.120.251:3306/tumaxpress?useConfigs=maxPerformance";
+        String mainDbConUrl = "jdbc:mysql://localhost:3306/tumaxpress?useConfigs=maxPerformance";
         String mysqlMainUser = "root";
         String mysqlMainPassword = "@OPENsystems";
         int hikariMinPool = 0;
