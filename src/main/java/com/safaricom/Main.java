@@ -17,9 +17,9 @@ public class Main {
     public static void startApp() {
 
         Log.d("Starting app....");
-        String parcelConUrl ="jdbc:mysql://localhost:3306/tumaxpress?useConfigs=maxPerformance";
+        String parcelConUrl ="jdbc:mysql://34.66.51.110:3306/tumaxpress?useConfigs=maxPerformance";
         String mysqlUser = "root";
-        String mysqlPassword = "@OPENsystems";
+        String mysqlPassword = "tumaxpr355";
         int hikariMinPool = 0;
         int HIKARI_MAX_POOL_SIZE = 10;
 

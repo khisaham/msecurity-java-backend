@@ -147,7 +147,7 @@ public class HttpServerHandler extends ChannelInboundHandlerAdapter {
 
         System.out.println(">>> Endpoint " + endpointName + " << URI " + theUri);
 
-        Log.d(">>> Endpoint Message " + requestMessage);
+        Log.w(">>> Endpoint Message " + requestMessage);
         /** endpoint for c2c transactions **/
         if (endpointName.equalsIgnoreCase("customer_to_customer_transfer")) {
             resultS = MoneyTransfer.CustomerToCustomer(requestMessage);

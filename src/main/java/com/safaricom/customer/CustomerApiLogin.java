@@ -1,6 +1,7 @@
 package com.safaricom.customer;
 
 import com.safaricom.commons.DbBoilerPlates;
+import com.safaricom.commons.Log;
 import org.json.JSONObject;
 
 import static com.safaricom.customer.CustomerAPI.encryptPassword;
@@ -10,6 +11,7 @@ import static com.safaricom.customer.CustomerAPI.encryptPassword;
  */
 public class CustomerApiLogin {
     public static JSONObject LoginHandler(String requestMessage){
+        Log.w("Login endpoint clicked: "+requestMessage);
     JSONObject response = new JSONObject();
     JSONObject payload = new JSONObject(requestMessage);
         String pin = payload.getString("pin");
@@ -30,6 +32,7 @@ public class CustomerApiLogin {
                 response.put("reason", "PIN/Phone Number mismatch");
 
             }
+        Log.w("Login data: "+response.toString());
             return response;
     }
 
